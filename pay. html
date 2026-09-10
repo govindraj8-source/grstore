@@ -1,3 +1,33 @@
-<a href="upi://pay?pa=govindraj8-1@oksbi&pn=Govind%20Rath&am=1.00&cu=INR">
-    Pay ₹1
-</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+
+<body style="margin:0; background-color:#FFF8E7; color:#263238;">
+
+    <div style="text-align:center; margin-top:50px;">
+
+        <h2>Payment</h2>
+
+        <p>₹1 செலுத்த கீழே உள்ள பட்டனை அழுத்தவும்.</p>
+
+        <a href="upi://pay?pa=govindraj8-1@oksbi&pn=Govind%20Rath&am=1.00&cu=INR"
+           style="
+           background:#1976D2;
+           color:white;
+           padding:12px 25px;
+           text-decoration:none;
+           border-radius:5px;
+           display:inline-block;
+           font-size:16px;
+           ">
+           Pay ₹1
+        </a>
+
+    </div>
+
+</body>
+</html>
