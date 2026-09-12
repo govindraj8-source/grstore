@@ -11,11 +11,11 @@
 
     <div style="max-width: 400px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1);">
         <h2>GR Store கட்டணம்</h2>
-        <p>கதை புத்தகத்தைப் படிக்க ₹1 செலுத்தவும்.</p>
+        <p>கதை புத்தகத்தைப் படிக்க ₹20 செலுத்தவும்.</p>
 
         <!-- Payment Button -->
         <button id="pay-btn" style="background:#28a745; color:white; padding:12px 25px; border:none; border-radius:5px; font-size:18px; cursor:pointer; width: 100%;">
-            Pay ₹1Now
+            Pay ₹20Now
         </button>
     </div>
 
@@ -23,7 +23,7 @@
     document.getElementById('pay-btn').onclick = function(e){
         var options = {
             "key": "rzp_live_TWfUTNr5dsOOd2", // உங்களது லைவ் கீ ஐடி
-            "amount": "100", // ₹20 என்பது 2000 பைசாவாக கணக்கிடப்பட்டுள்ளது
+            "amount": "2000", // ₹20 என்பது 2000 பைசாவாக கணக்கிடப்பட்டுள்ளது
             "currency": "INR",
             "name": "GR Store",
             "description": "Story Reading Access",
