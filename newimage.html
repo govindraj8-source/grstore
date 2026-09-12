@@ -1,98 +1,53 @@
 <!DOCTYPE html>
 <html lang="ta">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>கதை படிக்க</title>
-<style>
-body{margin:0;padding:15px;background:#FFF8E7;color:#263238;font-family:Arial;line-height:1.7}
-.head{position:relative;width:100%}
-.head>img{display:block;width:100%;height:auto}
-.nav{position:absolute;bottom:0;right:0;background:white;padding:1px}
-.nav a{margin-left:5px;color:blue;text-decoration:none;font-size:17px}
-.logo{position:absolute;top:0;left:0}
-.logo img{width:55px}
-.box{max-width:650px;margin:20px auto;background:white;padding:20px;border-radius:12px}
-.step{background:#F0F8FF;padding:12px;margin:12px 0;border-left:4px solid #1976D2}
-.pay{text-align:center;margin:20px}
-.pay a{background:#1976D2;color:white;padding:12px 25px;border-radius:7px;text-decoration:none;font-weight:bold}
-.wa{text-align:center;margin:20px}
-.wa a{background:#25D366;color:white;padding:10px 20px;border-radius:6px;text-decoration:none}
-.note{background:#FFF3CD;padding:10px;border-radius:6px}
-h2,h3{text-align:center;color:#8B0000}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR Store - Payment</title>
+    <!-- Razorpay Checkout Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
+<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f9f9f9;">
 
-<body>
+    <div style="max-width: 400px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1);">
+        <h2>GR Store கட்டணம்</h2>
+        <p>கதை புத்தகத்தைப் படிக்க ₹20 செலுத்தவும்.</p>
 
-<div class="head">
+        <!-- Payment Button -->
+        <button id="pay-btn" style="background:#28a745; color:white; padding:12px 25px; border:none; border-radius:5px; font-size:18px; cursor:pointer; width: 100%;">
+            Pay ₹20 Now
+        </button>
+    </div>
 
-<img src="banner.jpg">
-
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="aboutus.html">About Us</a>
-<a href="contact.html">Contact Us</a>
-</div>
-
-<div class="logo">
-<img src="logo.jpg">
-</div>
-
-</div>
-
-<div class="box">
-
-<h2>ஒரு வித்தியாசமான கதை அனுபவம்</h2>
-
-<p><b>கதையின் முடிவில் வித்தியாசமான அனுபவத்தால் ஆட்கொள்ளப்படுவீர்கள்.</b></p>
-
-<p>முழு கதையை படிக்க கீழே உள்ள Pay லிங்கை தட்டுவதற்கு முன் குறிப்புகளை படியுங்கள்.</p>
-
-<div class="step">
-<b>1. பணம் செலுத்துங்கள்</b><br>
-UPI திறந்தவுடன் பணம் செலுத்துங்கள். செலுத்திய பின் வரும் உறுதிப்படுத்தப்பட்ட பணம் அனுப்பிய ரசீதை கீழே உள்ள WhatsApp எண்ணுக்கு பகிருங்கள்.<br>
-
-(குறிப்பு:பணம் செலுத்துவதற்கு முன் இந்த பக்கத்தின் கடைசியில் உள்ள whatsapp tabஐ தட்டுங்கள். whatsapp பக்கம் திறக்கும். அதில் 'hi'என்று டைப் செய்து அனுப்புங்கள். இதனால் அடுத்த முறை நீங்கள் upi மூலம் பணம் செலுத்திய பிறகு வரூம் successful confirmation pop up boxல் கிடைக்கும் ரசீதை  share screenshot அனுப்ப வசதியாக இருக்கும்)
-</div>
-
-<div class="step">
-<b>2. ரசீதை அனுப்புங்கள்</b><br>
-பணம் வந்தடைந்ததை உறுதி செய்த பின் கதையின் இணையதள பக்கத்தின் லிங்க் அதே WhatsApp எண்ணுக்கு அனுப்பப்படும்.<br><br>
-வேறு எண்ணுக்கு அனுப்ப வேண்டுமானால் அந்த எண்ணை டைப் செய்து அனுப்புங்கள்.
-</div>
-
-<div class="step">
-<b>3. கதை உங்களுக்கு அனுப்பப்படும்</b><br>
-கதை எழுத்து வடிவிலேயே நேராக உங்கள் WhatsApp எண்ணுக்கு அனுப்பப்படும்.<br><br>
-சந்தேகங்கள் மற்றும் குறைகளுக்கும் இதே WhatsApp-ஐ தொடர்பு கொள்ளலாம்.
-</div>
-
-<div class="note">
-<b>⏰ அனுப்பப்படும் நேரம்:</b><br>
-நீங்கள் எந்த நேரத்தில் பணம் செலுத்தினாலும், கதை காலை 6:00 மணி முதல் இரவு 9:00 மணி வரை அனுப்பப்படும்.
-</div>
-
-<h3>இப்போது கீழே உள்ள லிங்கை தட்டுங்கள்</h3>
-
-<div class="pay">
-<a href="  https://razorpay.me/@novel408?amount=LQd6iilpBVdteXBlLYKeuA%3D%3D">
-💰 Pay ₹20
-</a>
-</div>
-
-<div class="wa">
-
-UPI மூலம் பணம் அனுப்பியதற்கான ரசீதை அனுப்பவும், பிற வகை கருத்துகள்,குறைகளுக்கு
-WhatsApp-ல் தொடர்பு கொள்ள
-
-<a href="https://wa.me/919790592680" target="_blank">
-WhatsApp
-</a>
-
-</div>
-
-</div>
+    <script>
+    document.getElementById('pay-btn').onclick = function(e){
+        var options = {
+            "key": "Rzp_live_TWfUTNr5dsOOd2", // உங்களது லைவ் கீ ஐடி
+            "amount": "2000", // ₹20 என்பது 2000 பைசாவாக கணக்கிடப்பட்டுள்ளது
+            "currency": "INR",
+            "name": "GR Store",
+            "description": "Story Reading Access",
+            "handler": function (response){
+                // பணம் வெற்றிகரமாக முடிந்ததும் இயங்கும் பகுதி
+                alert("Payment Successful! ID: " + response.razorpay_payment_id);
+                
+                // பணம் செலுத்தியதும் mainpage.html பக்கத்திற்கு செல்வது
+                window.location.href = "mainpage.html"; 
+            },
+            "prefill": {
+                "name": "Govindaraj",
+                "email": "govindraj8@gmail.com",
+                "contact": "9999999999"
+            },
+            "theme": {
+                "color": "#3399cc"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+        e.preventDefault();
+    }
+    </script>
 
 </body>
 </html>
