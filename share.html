@@ -3,51 +3,121 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-    <title>ஒரு பேயின் கதை - Govind Rath Story Store</title>
+<title>ஒரு பேயின் கதை - Govind Rath Story Store</title>
 
-    <meta name="description"
-          content="ஒரு பேயின் கதை - 1000 பார்வையாளர்களை கடந்து பலரால் பாராட்டுக்களை பெற்ற கதை">
+<meta name="description"
+      content="ஒரு பேயின் கதை - Govind Rath Story Store">
 
-    <!-- Social Media Preview -->
+<meta property="og:title"
+      content="ஒரு பேயின் கதை">
 
-    <meta property="og:title"
-          content="ஒரு பேயின் கதை">
+<meta property="og:description"
+      content="ஒரு பேயின் கதை - Govind Rath Story Store">
 
-    <meta property="og:description"
-          content="1000 பார்வையாளர்களை கடந்து பலரால் பாராட்டுக்களை பெற்ற கதை">
+<meta property="og:image"
+      content="https://govindraj8-source.github.io/grstore/IMG-20260920-WA0002.jpg">
 
-    <meta property="og:image"
-          content="https://govindraj8-source.github.io/grstore/IMG-20260920-WA0002.jpg">
+<meta property="og:type"
+      content="website">
 
-    <meta property="og:type"
-          content="website">
+<meta property="og:url"
+      content="https://govindraj8-source.github.io/grstore/share.html">
 
-    <meta property="og:url"
-          content="https://govindraj8-source.github.io/grstore/">
+<style>
 
-    <!-- Homepage Redirect -->
+body {
+    background-color: #F0F8FF;
+    color: #000080;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
 
-    
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.story-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.share-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #000080;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+</style>
 
 </head>
 
-
 <body>
 
-    <p>
-        Homepage-க்கு செல்கிறது...
-    </p>
+<div class="container">
 
-    <p>
-        <a href="https://govindraj8-source.github.io/grstore/">
-            Homepage-க்கு செல்ல இங்கே கிளிக் செய்யவும்
-        </a>
-    </p>
+<h1>ஒரு பேயின் கதை</h1>
+
+<img
+src="IMG-20260920-WA0002.jpg"
+alt="ஒரு பேயின் கதை"
+class="story-image">
+
+<br>
+
+<button class="share-button" onclick="sharePage()">
+பகிரவும்
+</button>
+
+<footer>
+© 2026 Govind Rath Story Store. All Rights Reserved.
+</footer>
+
+</div>
+
+<script>
+
+function sharePage() {
+
+    if (navigator.share) {
+
+        navigator.share({
+            title: "ஒரு பேயின் கதை",
+            text: "ஒரு பேயின் கதையைப் படிக்க இங்கே செல்லுங்கள்",
+            url: window.location.href
+        });
+
+    } else {
+
+        navigator.clipboard.writeText(window.location.href);
+
+        alert("Share link copied!");
+
+    }
+
+}
+
+</script>
 
 </body>
 
