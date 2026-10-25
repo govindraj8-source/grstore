@@ -9,19 +9,17 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-18331631179');
 </script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ஜேஸ்மின் காபி - மாதிரிக் கதை | Govind Rath Story Store</title>
+<title>ஜேஸ்மின் காபி | Govind Rath Story Store</title>
 
-<meta name="description" content="ஜேஸ்மின் காபி - ஒரு துப்பாக்கி, ஒரு கப் காபி, எதிர்பாராத திருப்பம்! முழுக் கதையைப் படியுங்கள்.">
+<meta name="description" content="ஜேஸ்மின் காபி - எதிர்பாராத திருப்பங்கள் நிறைந்த சுவாரஸ்யமான சிறுகதை.">
 
 <style>
-
 * {
     box-sizing: border-box;
 }
@@ -72,22 +70,27 @@ body {
 }
 
 .story-container {
+    max-width: 850px;
     margin: 30px auto;
     padding: 0 25px;
-    max-width: 850px;
-}
-
-.page-title {
-    text-align: center;
-    font-size: 30px;
-    color: #7B241C;
 }
 
 .story-title {
     text-align: center;
     font-size: 25px;
     color: #154360;
-    margin-top: 25px;
+    margin: 25px 0;
+}
+
+/* கதைப் படம் - நடுத்தர அளவு, மையத்தில் */
+
+.story-image {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto 30px;
+    border-radius: 6px;
 }
 
 .story {
@@ -99,8 +102,7 @@ body {
 
 .read-more {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin: 30px 0 35px;
 }
 
 .read-more a {
@@ -129,7 +131,6 @@ body {
 }
 
 @media (max-width: 600px) {
-
     .nav {
         padding: 3px;
     }
@@ -148,10 +149,6 @@ body {
         padding: 0 18px;
     }
 
-    .page-title {
-        font-size: 27px;
-    }
-
     .story-title {
         font-size: 23px;
     }
@@ -161,12 +158,14 @@ body {
         line-height: 1.9;
     }
 
+    .story-image {
+        max-width: 350px;
+    }
+
     .read-more a {
         font-size: 18px;
     }
-
 }
-
 </style>
 
 </head>
@@ -177,37 +176,34 @@ body {
 
 <div class="header">
 
-    <img
-        class="banner"
-        src="banner.jpg"
-        alt="Govind Rath Story Store">
+    <img class="banner"
+         src="banner.jpg"
+         alt="Govind Rath Story Store">
 
     <div class="nav">
-
         <a href="index.html">Home</a>
-
         <a href="aboutus.html">About Us</a>
-
         <a href="contact.html">Contact Us</a>
-
     </div>
 
     <div class="logo">
-
-        <img
-            src="logo.jpg"
-            alt="Govind Rath Story Store Logo">
-
+        <img src="logo.jpg"
+             alt="Govind Rath Story Store Logo">
     </div>
 
 </div>
-
 
 <!-- Sample Story -->
 
 <main class="story-container">
 
-    <h1 class="page-title">மாதிரிக் கதை</h1>
+    <!-- மாதிரிக் கதை என்ற தலைப்பிற்குப் பதிலாகப் படம் -->
+
+    <img
+        class="story-image"
+        src="1792159705956.png"
+        alt="ஜேஸ்மின் காபி சிறுகதைக் காட்சி"
+        loading="lazy">
 
     <h2 class="story-title">ஜேஸ்மின் காபி</h2>
 
@@ -226,7 +222,7 @@ body {
         தப்பித்தானா? இந்த நிகழ்வுக்கும், காபிக்கும் என்ன தொடர்பு?
         </p>
 
-        <p style="text-align:center; font-weight:bold;">
+        <p style="text-align:center; font-weight:bold; color:#154360;">
         போன்ற கேள்விகளுக்குப் பதில்களாக முழுக் கதையைப் படியுங்கள்.
         </p>
 
@@ -234,14 +230,11 @@ body {
 
     <div class="read-more">
 
-        <a href="story.html">
-            முழுக் கதையைப் படிக்க
-        </a>
+        <a href="story.html">முழுக் கதையைப் படிக்க</a>
 
     </div>
 
 </main>
-
 
 <hr>
 
@@ -260,11 +253,8 @@ body {
 </div>
 
 <div class="copyright">
-
     © 2026 Govind Rath Story Store. All Rights Reserved.
-
 </div>
 
 </body>
-
 </html>
