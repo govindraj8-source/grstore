@@ -77,19 +77,19 @@ body {
 
 .story-title {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: #154360;
-    margin: 25px 0;
+    margin: 25px 0 20px;
 }
 
-/* கதைப் படம் - நடுத்தர அளவு, மையத்தில் */
+/* கதைப் படம் */
 
 .story-image {
     display: block;
     width: 100%;
     max-width: 450px;
     height: auto;
-    margin: 20px auto 30px;
+    margin: 0 auto 30px;
     border-radius: 6px;
 }
 
@@ -131,6 +131,7 @@ body {
 }
 
 @media (max-width: 600px) {
+
     .nav {
         padding: 3px;
     }
@@ -150,16 +151,16 @@ body {
     }
 
     .story-title {
-        font-size: 23px;
+        font-size: 26px;
+    }
+
+    .story-image {
+        max-width: 450px;
     }
 
     .story {
         font-size: 17px;
         line-height: 1.9;
-    }
-
-    .story-image {
-        max-width: 350px;
     }
 
     .read-more a {
@@ -176,9 +177,10 @@ body {
 
 <div class="header">
 
-    <img class="banner"
-         src="banner.jpg"
-         alt="Govind Rath Story Store">
+    <img
+        class="banner"
+        src="banner.jpg"
+        alt="Govind Rath Story Store">
 
     <div class="nav">
         <a href="index.html">Home</a>
@@ -187,25 +189,24 @@ body {
     </div>
 
     <div class="logo">
-        <img src="logo.jpg"
-             alt="Govind Rath Story Store Logo">
+        <img
+            src="logo.jpg"
+            alt="Govind Rath Story Store Logo">
     </div>
 
 </div>
 
-<!-- Sample Story -->
+<!-- Story Sample -->
 
 <main class="story-container">
 
-    <!-- மாதிரிக் கதை என்ற தலைப்பிற்குப் பதிலாகப் படம் -->
+    <h1 class="story-title">ஜேஸ்மின் காபி</h1>
 
     <img
         class="story-image"
         src="1792159705956.png"
         alt="ஜேஸ்மின் காபி சிறுகதைக் காட்சி"
         loading="lazy">
-
-    <h2 class="story-title">ஜேஸ்மின் காபி</h2>
 
     <div class="story">
 
@@ -229,9 +230,7 @@ body {
     </div>
 
     <div class="read-more">
-
         <a href="story.html">முழுக் கதையைப் படிக்க</a>
-
     </div>
 
 </main>
