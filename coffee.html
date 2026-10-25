@@ -1,269 +1,302 @@
 <!DOCTYPE html>
 <html lang="ta">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18331631179"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-18331631179');
-</script>
+    <title>ஜேஸ்மின் காபி | Govind Rath Story Store</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="ஜேஸ்மின் காபி — எதிர்பாராத திருப்பங்களுடன் கூடிய தமிழ் சிறுகதை. Govind Rath Story Store-ல் படியுங்கள்.">
 
-<title>ஜேஸ்மின் காபி | Govind Rath Story Store</title>
+    <meta name="keywords"
+          content="ஜேஸ்மின் காபி, தமிழ் சிறுகதை, Tamil Short Story, Govind Rath, Thriller Story">
 
-<meta name="description" content="ஜேஸ்மின் காபி - சுவாரஸ்யமான தமிழ் சிறுகதை.">
+    <meta name="author" content="Govind Rath">
 
-<style>
-* {
-    box-sizing: border-box;
-}
+    <!-- Google Ads Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18331631179"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'AW-18331631179');
+    </script>
 
-body {
-    margin: 0;
-    background-color: #F0F8FF;
-    overflow-x: hidden;
-    color: black;
-    font-family: Arial, sans-serif;
-}
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-.header {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, "Noto Sans Tamil", sans-serif;
+            background-color: #f7f4ef;
+            color: #222;
+            line-height: 1.8;
+        }
 
-.banner {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+        header {
+            text-align: center;
+            background-color: #ffffff;
+        }
 
-.nav {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: white;
-    padding: 3px 5px;
-}
+        .banner {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-.nav a {
-    margin-left: 5px;
-    font-size: 18px;
-}
+        .logo {
+            width: 90px;
+            height: auto;
+            margin: 12px auto;
+            display: block;
+        }
 
-.logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 12px 8px;
+            background-color: #442719;
+        }
 
-.logo img {
-    width: 55px;
-    height: auto;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
 
-.story-container {
-    max-width: 850px;
-    margin: 30px auto;
-    padding: 0 25px;
-}
+        nav a:hover {
+            color: #ffd180;
+        }
 
-.story-title {
-    text-align: center;
-    font-size: 30px;
-    color: #154360;
-    margin: 25px 0 5px;
-}
+        main {
+            width: 92%;
+            max-width: 760px;
+            margin: 25px auto;
+            padding: 22px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
 
-.story-type {
-    text-align: center;
-    font-size: 18px;
-    color: #555;
-    margin: 0 0 20px;
-}
+        /* Square story image */
+        .story-image-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            aspect-ratio: 1 / 1;
+            margin: 10px auto 25px;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #333;
+        }
 
-/* படம் 1:1 சதுர வடிவம் */
+        .story-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.story-image {
-    display: block;
-    width: 100%;
-    max-width: 450px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    margin: 0 auto 30px;
-    border-radius: 6px;
-}
+        /* Title displayed inside the image */
+        .story-image-title {
+            position: absolute;
+            top: 12px;
+            left: 0;
+            width: 100%;
+            padding: 8px 5px;
+            text-align: center;
+            color: #ffffff;
+            font-size: clamp(22px, 5vw, 30px);
+            font-weight: bold;
+            line-height: 1.5;
+            text-shadow:
+                2px 2px 4px #000000,
+                -1px -1px 3px #000000;
+        }
 
-.story {
-    font-size: 18px;
-    line-height: 1.9;
-    color: black;
-    overflow-wrap: break-word;
-}
+        .story-image-subtitle {
+            display: block;
+            font-size: 18px;
+            margin-top: 2px;
+        }
 
-.read-more {
-    text-align: center;
-    margin: 30px 0 35px;
-}
+        h2 {
+            text-align: center;
+            color: #6b351c;
+            font-size: 23px;
+            margin: 15px 0;
+        }
 
-.read-more a {
-    display: inline-block;
-    background-color: #7B241C;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 20px;
-    font-weight: bold;
-}
+        .story-text {
+            font-size: 17px;
+            text-align: left;
+            line-height: 2;
+        }
 
-.footer-links {
-    margin: 15px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 2;
-}
+        .read-button {
+            display: block;
+            width: fit-content;
+            max-width: 100%;
+            margin: 28px auto 15px;
+            padding: 12px 25px;
+            background-color: #7b351d;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 6px;
+        }
 
-.copyright {
-    text-align: center;
-    font-size: 18px;
-    margin: 15px 5px;
-    padding-bottom: 15px;
-}
+        .read-button:hover {
+            background-color: #51210f;
+        }
 
-@media (max-width: 600px) {
+        footer {
+            margin-top: 30px;
+            padding: 20px 10px;
+            text-align: center;
+            background-color: #442719;
+            color: white;
+            font-size: 13px;
+        }
 
-    .nav {
-        padding: 3px;
-    }
+        .footer-links {
+            margin-bottom: 10px;
+        }
 
-    .nav a {
-        margin-left: 3px;
-        font-size: 12px;
-    }
+        .footer-links a {
+            display: inline-block;
+            margin: 4px 8px;
+            color: #ffffff;
+            text-decoration: none;
+        }
 
-    .logo img {
-        width: 40px;
-    }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
 
-    .story-container {
-        margin: 20px auto;
-        padding: 0 18px;
-    }
+        @media (max-width: 480px) {
+            main {
+                width: 94%;
+                padding: 15px;
+            }
 
-    .story-title {
-        font-size: 26px;
-    }
+            nav {
+                gap: 12px;
+            }
 
-    .story-image {
-        max-width: 350px;
-    }
+            nav a {
+                font-size: 14px;
+            }
 
-    .story {
-        font-size: 17px;
-        line-height: 1.9;
-    }
-
-    .read-more a {
-        font-size: 18px;
-    }
-}
-</style>
-
+            .story-text {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- Header -->
+    <header>
+        <img
+            src="banner.jpg"
+            alt="Govind Rath Story Store"
+            class="banner">
 
-<div class="header">
-
-    <img
-        class="banner"
-        src="banner.jpg"
-        alt="Govind Rath Story Store">
-
-    <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </div>
-
-    <div class="logo">
         <img
             src="logo.jpg"
-            alt="Govind Rath Story Store Logo">
-    </div>
+            alt="Govind Rath Story Store Logo"
+            class="logo">
+    </header>
 
-</div>
+    <nav>
+        <a href="index.html">முகப்பு</a>
+        <a href="mainpage.html">கதைகள்</a>
+        <a href="aboutus.html">எங்களைப் பற்றி</a>
+        <a href="contact.html">தொடர்புக்கு</a>
+    </nav>
 
-<!-- Story Sample -->
+    <main>
 
-<main class="story-container">
+        <!-- தலைப்பு படத்தின் உள்ளே இருக்கும் -->
+        <div class="story-image-container">
 
-    <h1 class="story-title">ஜேஸ்மின் காபி</h1>
+            <img
+                src="1792159705956.png"
+                alt="ஜேஸ்மின் காபி தமிழ் சிறுகதை"
+                class="story-image"
+                fetchpriority="high">
 
-    <p class="story-type">(சிறுகதை)</p>
+            <div class="story-image-title">
+                ஜேஸ்மின் காபி
+                <span class="story-image-subtitle">(சிறுகதை)</span>
+            </div>
 
-    <img
-        class="story-image"
-        src="1792159705956.png"
-        alt="ஜேஸ்மின் காபி சிறுகதைக் காட்சி"
-        loading="lazy">
+        </div>
 
-    <div class="story">
+        <h2>கதையின் அறிமுகம்</h2>
+
+        <div class="story-text">
+
+            <p>
+                நடு இரவு.
+            </p>
+
+            <p>
+                காலிங் பெல் சத்தம் கேட்டு கதவைத் திறந்தவனுக்கு அதிர்ச்சி!
+                வெளியே வாட்டசாட்டமான ஒருவன் கையில் துப்பாக்கியுடன் நிற்கிறான்.
+                பயத்தில் கதவை அடைக்க முயன்றவனைத் தள்ளிக்கொண்டு உள்ளே நுழைகிறான்
+                அந்தத் துப்பாக்கிக்காரன்.
+            </p>
+
+            <p>
+                அதே நேரத்தில் கரண்ட் கட் ஆகிவிடுகிறது!
+            </p>
+
+            <p>
+                அடுத்து நடந்தது என்ன? துப்பாக்கிக்காரனிடமிருந்து அவன் தப்பித்தானா?
+                இந்த நிகழ்வுக்கும் காபிக்கும் என்ன தொடர்பு?
+            </p>
+
+            <p>
+                போன்ற கேள்விகளுக்குப் பதில்களாக முழுக் கதையைப் படியுங்கள்.
+            </p>
+
+        </div>
+
+        <!-- முழுக் கதையின் உண்மையான HTML கோப்புப் பெயரை இங்கே கொடுக்கவும் -->
+        <a href="story.html" class="read-button">
+            முழுக் கதையைப் படிக்க
+        </a>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-links">
+            <a href="privacy.html">தனியுரிமைக் கொள்கை</a>
+            <a href="terms.html">விதிமுறைகள்</a>
+            <a href="copyright.html">பதிப்புரிமை</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
 
         <p>
-        நடு இரவு. காலிங் பெல் சத்தம் கேட்டு கதவைத் திறந்தவனுக்கு
-        அதிர்ச்சி! வெளியே வாட்டசாட்டமான ஒருவன் கையில்
-        துப்பாக்கியுடன் நிற்கிறான். பயத்தில் கதவை அடைக்க முயன்றவனைத்
-        தள்ளிக்கொண்டு உள்ளே நுழைகிறான் அந்தத் துப்பாக்கிக்காரன்.
-        அதே நேரத்தில் கரண்ட் கட் ஆகிவிடுகிறது!
+            © 2026 Govind Rath Story Store.
+            All Rights Reserved.
         </p>
 
-        <p>
-        அடுத்து நடந்தது என்ன? துப்பாக்கிக்காரனிடமிருந்து அவன்
-        தப்பித்தானா? இந்த நிகழ்வுக்கும், காபிக்கும் என்ன தொடர்பு?
-        </p>
-
-        <p style="text-align:center; font-weight:bold; color:#154360;">
-        போன்ற கேள்விகளுக்குப் பதில்களாக முழுக் கதையைப் படியுங்கள்.
-        </p>
-
-    </div>
-
-    <div class="read-more">
-        <a href="story.html">முழுக் கதையைப் படிக்க</a>
-    </div>
-
-</main>
-
-<hr>
-
-<!-- Footer -->
-
-<div class="footer-links">
-
-    <a href="privacy.html">Privacy Policy</a> |
-
-    <a href="terms.html">Terms &amp; Conditions</a> |
-
-    <a href="copyright.html">Copyright Policy</a> |
-
-    <a href="disclaimer.html">Disclaimer</a>
-
-</div>
-
-<div class="copyright">
-    © 2026 Govind Rath Story Store. All Rights Reserved.
-</div>
+    </footer>
 
 </body>
 </html>
