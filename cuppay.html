@@ -21,9 +21,10 @@ button{background:#7B241C;color:white;border:0;padding:13px 28px;border-radius:6
 <script>
 document.getElementById('pay-btn').addEventListener('click',function(){
  var options={
-  key:"YOUR_RAZORPAY_KEY_ID",
+  key:"rzp_live_TWfUTNr5dsOOd2",
   amount:500,currency:"INR",name:"Govind Rath Story Store",
   description:"ஜேஸ்மின் காபி - முழுக் கதை",
+  prefill:{name:"Govindaraj",email:"govindraj8@gmail.com",contact:"9999999999"},
   handler:function(response){
    sessionStorage.setItem("cup_payment_success","yes");
    sessionStorage.setItem("cup_payment_id",response.razorpay_payment_id||"");
