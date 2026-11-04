@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ta"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Status - Govind Rath Story Store</title>
+<style>
+body{margin:0;background:#F0F8FF;color:#263238;font-family:Arial,sans-serif;text-align:center;padding:45px 18px}
+.box{max-width:440px;margin:35px auto;background:white;padding:28px 20px;border-radius:10px;box-shadow:0 2px 12px #0002}
+h2{color:#1976D2}
+</style></head><body><div class="box"><h2>பணம் செலுத்திய நிலை</h2>
+<p id="status">பணம் செலுத்திய தகவலை சரிபார்க்கிறோம்...</p></div>
+<script>
+(function(){
+ var paid=false;
+ try{paid=sessionStorage.getItem("cup_payment_success")==="yes";}catch(e){}
+ if(paid){
+  document.getElementById("status").textContent="Payment Successful. உங்கள் கதையைத் திறக்கிறோம்...";
+  try{sessionStorage.removeItem("cup_payment_success");sessionStorage.removeItem("cup_payment_id");}catch(e){}
+  setTimeout(function(){window.location.replace("Cup.html");},1200);
+ }else{
+  document.getElementById("status").textContent="பணம் செலுத்திய வெற்றித் தகவல் கிடைக்கவில்லை. மீண்டும் முயற்சிக்கவும்.";
+  var a=document.createElement("a");a.href="cuppay.html";a.textContent="மீண்டும் முயற்சிக்கவும்";
+  document.querySelector(".box").appendChild(a);
+ }
+})();
+</script></body></html>
