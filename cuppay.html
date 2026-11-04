@@ -19,21 +19,30 @@ button{background:#7B241C;color:white;border:0;padding:13px 28px;border-radius:6
 <button id="pay-btn" type="button">Pay ₹5</button>
 <p class="note">பணம் செலுத்திய பிறகு வெற்றிச் செய்தி கிடைத்ததும் கதைப் பக்கம் திறக்கும்.</p></main>
 <script>
-document.getElementById('pay-btn').addEventListener('click',function(){
- var options={
-  key:"rzp_live_TWfUTNr5dsOOd2",
-  amount:500,currency:"INR",name:"Govind Rath Story Store",
-  description:"ஜேஸ்மின் காபி - முழுக் கதை",
-  prefill:{name:"Govindaraj",email:"govindraj8@gmail.com",contact:"9999999999"},
-  handler:function(response){
+document.getElementById('pay-btn').onclick = function(e){
+ e.preventDefault();
+ var options = {
+  "key": "rzp_live_TWfUTNr5dsOOd2",
+  "amount": "500",
+  "currency": "INR",
+  "name": "GR Store",
+  "description": "Story Reading Access - Jasmine Coffee",
+  "handler": function(response){
    sessionStorage.setItem("cup_payment_success","yes");
-   sessionStorage.setItem("cup_payment_id",response.razorpay_payment_id||"");
-   window.location.href="cupverify.html";
+   sessionStorage.setItem("cup_payment_id",response.razorpay_payment_id || "");
+   window.location.href = "cupverify.html";
   },
-  theme:{color:"#7B241C"}
+  "prefill": {
+   "name": "Govindaraj",
+   "email": "govindraj8@gmail.com",
+   "contact": "9999999999"
+  },
+  "theme": {"color": "#3399cc"}
  };
- var checkout=new Razorpay(options);
- checkout.on('payment.failed',function(){alert("பணம் செலுத்த முடியவில்லை. மீண்டும் முயற்சிக்கவும்.");});
- checkout.open();
-});
+ var rzp1 = new Razorpay(options);
+ rzp1.on('payment.failed', function(response){
+  alert("பணம் செலுத்த முடியவில்லை. மீண்டும் முயற்சிக்கவும்.");
+ });
+ rzp1.open();
+};
 </script></body></html>
