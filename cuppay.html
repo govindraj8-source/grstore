@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ta"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ஜேஸ்மின் காபி - ₹5 Payment</title>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<style>
+body{margin:0;background:#FFF8E7;color:#263238;font-family:Arial,sans-serif;text-align:center}
+header{position:relative;max-width:1000px;margin:auto}header img.banner{width:100%;height:auto;display:block}
+.logo{position:absolute;top:0;left:0}.logo img{width:55px}
+nav{position:absolute;bottom:0;right:0;background:white;padding:3px}nav a{margin:4px}
+.box{max-width:420px;margin:35px auto;padding:28px 20px;background:white;border-radius:10px}
+button{background:#7B241C;color:white;border:0;padding:13px 28px;border-radius:6px;font-size:19px;width:100%}
+.note{font-size:14px;line-height:1.7;color:#555}
+</style></head><body>
+<header><img class="banner" src="banner.jpg" alt="Govind Rath Story Store">
+<div class="logo"><img src="logo.jpg" alt="Logo"></div>
+<nav><a href="index.html">Home</a><a href="aboutus.html">About Us</a><a href="contact.html">Contact Us</a></nav></header>
+<main class="box"><h2>ஜேஸ்மின் காபி</h2><p>முழுக் கதையைப் படிக்க</p><h2>₹5 மட்டும்</h2>
+<button id="pay-btn" type="button">Pay ₹5</button>
+<p class="note">பணம் செலுத்திய பிறகு வெற்றிச் செய்தி கிடைத்ததும் கதைப் பக்கம் திறக்கும்.</p></main>
+<script>
+document.getElementById('pay-btn').addEventListener('click',function(){
+ var options={
+  key:"YOUR_RAZORPAY_KEY_ID",
+  amount:500,currency:"INR",name:"Govind Rath Story Store",
+  description:"ஜேஸ்மின் காபி - முழுக் கதை",
+  handler:function(response){
+   sessionStorage.setItem("cup_payment_success","yes");
+   sessionStorage.setItem("cup_payment_id",response.razorpay_payment_id||"");
+   window.location.href="cupverify.html";
+  },
+  theme:{color:"#7B241C"}
+ };
+ var checkout=new Razorpay(options);
+ checkout.on('payment.failed',function(){alert("பணம் செலுத்த முடியவில்லை. மீண்டும் முயற்சிக்கவும்.");});
+ checkout.open();
+});
+</script></body></html>
