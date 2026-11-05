@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /newimage.html
+Sitemap: https://govindraj8-source.github.io/grstore/sitemap.xml
