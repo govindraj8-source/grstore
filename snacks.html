@@ -17,16 +17,20 @@ header{background:linear-gradient(135deg,#3d201b,#75402c);color:#fff;text-align:
 .poster{max-width:650px;margin:auto;background:#fff8eb;border:1px solid #ead6bd;border-radius:20px;overflow:hidden;box-shadow:0 8px 24px #59332320;text-align:center}
 .poster-top{padding:18px 12px 10px;background:linear-gradient(135deg,#fff2df,#f8e5cb)}
 .poster-top span{font-size:14px;letter-spacing:2px;color:#77503a}.poster-top h1{font-size:clamp(42px,10vw,66px);color:#b65312;margin:0;font-weight:900;line-height:1.2}.poster-top p{font-size:20px;color:#98521e;font-weight:700;margin:0}
-.poster-food{padding:12px 18px 4px;background:radial-gradient(ellipse at center,#f2dfc6 0%,#fff8eb 70%)}
-.food-bowl{position:relative;min-height:220px;max-width:430px;margin:auto;border-radius:48% 48% 38% 38%;background:linear-gradient(145deg,#9b5b2d,#5b301d 65%,#3e2419);border:9px solid #b9824b;box-shadow:inset 0 0 0 5px #e1b77f,0 10px 18px #4b2c1b35;display:flex;align-items:center;justify-content:center;gap:3px;flex-wrap:wrap;padding:20px 12px}
-.food{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-size:clamp(38px,9vw,58px);width:27%;height:90px;background:#f9e3bd;box-shadow:0 3px 8px #26150f50}
-.murukku{background:#e8a33f}.adhirasam{background:#9a4c20}.sesame{background:#e8d0a0}.sev{background:#f1b95a}.vadai{background:#b56b2d}
+.basket-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;padding:18px;background:linear-gradient(145deg,#f5e5cb,#fff8eb)}
+.basket-card{background:#fffdf7;border:1px solid #e8cda7;border-radius:16px;padding:10px 8px 13px;box-shadow:0 5px 14px #56351d18;color:#783b1d;font-size:19px}
+.basket-photo{height:155px;border-radius:13px;background:radial-gradient(ellipse at 50% 20%,#fff0ce,#e5c69b 75%);display:flex;align-items:flex-end;justify-content:center;padding:8px 5px}
+.snack-pile{width:95%;height:112px;border:8px solid #a96632;border-bottom-width:15px;border-radius:48% 48% 25% 25%;background:linear-gradient(155deg,#c9894e,#6c3a20);box-shadow:inset 0 0 0 4px #e2b77f,0 7px 10px #4a2a1838;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#f8c36c;font-size:23px;line-height:1.05;text-shadow:0 2px 3px #4a210e}
+.murukku-pile{color:#ffc45a}.adhirasam-pile{color:#6d2b12;font-size:27px}.ellu-pile{color:#f4d18b;font-size:22px}.sev-pile{color:#ffc15a;font-size:24px;letter-spacing:-3px}
 .poster-copy{padding:8px 20px 24px;color:#281a14}.poster-copy h2{color:#8d3f18;font-size:23px;margin:14px 0 5px}.poster-copy p{font-size:17px;line-height:1.8;font-weight:700;margin:0}
 .contact{margin:18px auto 8px;padding:14px 10px;max-width:430px;background:#fff0d9;border-radius:14px;display:flex;flex-direction:column;gap:4px}.contact strong{font-size:20px}.contact b{font-size:clamp(25px,6vw,34px);color:#4b2a1b}.contact span{font-weight:700;font-size:16px}
 .order-note{font-size:27px;font-weight:900;color:#7b3518;line-height:1.45;margin-top:20px}
-@media(max-width:420px){.poster-copy{padding-left:12px;padding-right:12px}.poster-copy p{font-size:15px}.food-bowl{min-height:185px}.food{height:76px}}.intro{text-align:center;padding:20px 10px 8px}.intro h1{color:var(--wine);font-size:26px;margin:0 0 8px}.intro p{line-height:1.8;margin:0}
+@media(max-width:420px){.basket-photo{height:125px}.snack-pile{height:94px}.poster-copy{padding-left:12px;padding-right:12px}.poster-copy p{font-size:15px}.food-bowl{min-height:185px}.food{height:76px}}.intro{text-align:center;padding:20px 10px 8px}.intro h1{color:var(--wine);font-size:26px;margin:0 0 8px}.intro p{line-height:1.8;margin:0}
 .grid{max-width:1050px;margin:20px auto 90px;padding:0 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px}
 .card{background:white;border:1px solid #ead9c4;border-radius:15px;padding:20px 12px;text-align:center;box-shadow:0 4px 14px #5933230c}.emoji{font-size:38px}.card h2{font-size:19px;color:var(--wine);margin:10px 0 5px}.card p{font-size:14px;line-height:1.6;margin:0;color:#70584b}
+.price-info{max-width:650px;margin:20px auto 26px;padding:22px 16px;text-align:center;background:#fff;border:1px solid #e7d2b7;border-radius:18px;box-shadow:0 5px 16px #59332312}
+.price-info h2{margin:0 0 9px;color:#552b20;font-size:24px}.price-info p{line-height:1.8;margin:0 0 17px}
+.whatsapp-btn{display:block;max-width:480px;margin:auto;padding:15px 18px;border-radius:999px;background:#168b42;color:white;text-decoration:none;font-size:18px;font-weight:800;box-shadow:0 5px 12px #168b4233}
 .note{max-width:850px;margin:0 auto 30px;padding:0 18px;text-align:center;color:#735746;line-height:1.8}
 footer{text-align:center;background:#3d201b;color:#f9e8cc;padding:22px 12px;font-size:14px}
 nav{position:fixed;bottom:0;left:0;right:0;background:#fffdf8;border-top:1px solid #e7d6c2;display:flex;justify-content:center;gap:28px;padding:12px;box-shadow:0 -4px 14px #00000010}nav a{color:var(--wine);text-decoration:none;font-weight:700;font-size:14px}
@@ -37,10 +41,12 @@ nav{position:fixed;bottom:0;left:0;right:0;background:#fffdf8;border-top:1px sol
 <section class="hero">
 <div class="poster">
   <div class="poster-top"><span>GR store's</span><h1>தென்சுவை</h1><p>உங்கள் இதயம் வரை</p></div>
-  <div class="poster-food" aria-label="முறுக்கு, அதிரசம், எள்ளுருண்டை மற்றும் சீவல் பலகாரங்கள்">
-    <div class="food-bowl"><span class="food murukku">🥨</span><span class="food adhirasam">🍘</span><span class="food sesame">⚪</span><span class="food sev">〰️</span><span class="food vadai">🧆</span></div>
-  </div>
-  <div class="poster-copy">
+  <div class="basket-gallery" aria-label="நான்கு கூடைகளில் பாரம்பரிய பலகாரங்கள்">
+    <div class="basket-card"><div class="basket-photo"><div class="snack-pile murukku-pile">〰️ 🟠 〰️<br>🟠 〰️ 🟠<br>〰️ 🟠 〰️</div></div><strong>முறுக்கு</strong></div>
+    <div class="basket-card"><div class="basket-photo"><div class="snack-pile adhirasam-pile">🟤 🟤<br>🟤 🟤 🟤<br>🟤 🟤</div></div><strong>அதிரசம்</strong></div>
+    <div class="basket-card"><div class="basket-photo"><div class="snack-pile ellu-pile">⚫ 🟤 ⚫<br>🟤 ⚫ 🟤<br>⚫ 🟤 ⚫</div></div><strong>எள்ளுருண்டை</strong></div>
+    <div class="basket-card"><div class="basket-photo"><div class="snack-pile sev-pile">〰️〰️〰️<br>〰️〰️〰️<br>〰️〰️〰️</div></div><strong>சீவல்</strong></div>
+  </div>  <div class="poster-copy">
     <h2>உற்பத்தி &amp; சப்ளை</h2>
     <p>• முறுக்கு, அதிரசம், எள் உருண்டை, சீவல்<br>• வடை வகைகள்</p>
     <h2>சேவை</h2>
@@ -58,7 +64,7 @@ nav{position:fixed;bottom:0;left:0;right:0;background:#fffdf8;border-top:1px sol
 <article class="card"><div class="emoji">🥢</div><h2>சீவல்</h2><p>தேநீர் நேரத்திற்கான மொறுமொறு</p></article>
 <article class="card"><div class="emoji">🧆</div><h2>வடை</h2><p>புதிய சுவை, வீட்டுத் தயாரிப்பு</p></article>
 </main>
-<div class="note">வீட்டு விழாக்கள், நிகழ்ச்சிகள் மற்றும் மொத்த விற்பனைக்கான ஆர்டர்களை வரவேற்கிறோம்.</div>
+<section class="price-info"><h2>விலை மற்றும் ஆர்டர் விவரங்கள்</h2><p>முறுக்கு, அதிரசம், எள்ளுருண்டை, சீவல் ஆகியவற்றின் விலை, அளவு மற்றும் மொத்த ஆர்டர் விவரங்களை WhatsApp-ல் கேளுங்கள்.</p><a class="whatsapp-btn" href="https://wa.me/919790592680?text=%E0%AE%A4%E0%AF%86%E0%AE%A9%E0%AF%8D%E0%AE%9A%E0%AF%81%E0%AE%B5%E0%AF%88%20%E0%AE%AA%E0%AE%B2%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AE%BF%E0%AE%A9%E0%AF%8D%20%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%88%20%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%86%E0%AE%B0%E0%AF%8D%E0%AE%9F%E0%AE%B0%E0%AF%8D%20%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%A4%E0%AF%86%E0%AE%B0%E0%AE%BF%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%95%E0%AF%8A%E0%AE%B3%E0%AF%8D%E0%AE%B3%20%E0%AE%B5%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D." target="_blank" rel="noopener">🟢 WhatsApp-ல் விலை கேட்டு ஆர்டர் செய்யுங்கள்</a></section>\n<div class="note">வீட்டு விழாக்கள், நிகழ்ச்சிகள் மற்றும் மொத்த விற்பனைக்கான ஆர்டர்களை வரவேற்கிறோம்.</div>
 <footer>தென்சுவை Snacks · உங்கள் இதயம் வரை</footer>
 <nav><a href="index.html">GR Store முகப்பு</a><a href="coffee.html">கதைகள்</a></nav>
 </body></html>
