@@ -13,7 +13,18 @@
 *{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,"Noto Sans Tamil",sans-serif}
 header{background:linear-gradient(135deg,#3d201b,#75402c);color:#fff;text-align:center;padding:24px 14px 28px;border-bottom:5px solid var(--gold)}
 .store{font-size:19px;letter-spacing:2px;color:#f7d99a}.brand{font-size:clamp(34px,8vw,52px);font-weight:800;margin:8px 0 0;color:#fff1d2}.sub{font-size:20px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-top:3px}
-.hero{max-width:1050px;margin:22px auto;padding:0 16px;text-align:center}.hero img{width:100%;max-width:600px;height:auto;max-height:85vh;object-fit:contain;border-radius:18px;display:block;margin:0 auto;box-shadow:0 8px 22px #59332325}.intro{text-align:center;padding:20px 10px 8px}.intro h1{color:var(--wine);font-size:26px;margin:0 0 8px}.intro p{line-height:1.8;margin:0}
+.hero{max-width:1050px;margin:22px auto;padding:0 16px;text-align:center}
+.poster{max-width:650px;margin:auto;background:#fff8eb;border:1px solid #ead6bd;border-radius:20px;overflow:hidden;box-shadow:0 8px 24px #59332320;text-align:center}
+.poster-top{padding:18px 12px 10px;background:linear-gradient(135deg,#fff2df,#f8e5cb)}
+.poster-top span{font-size:14px;letter-spacing:2px;color:#77503a}.poster-top h1{font-size:clamp(42px,10vw,66px);color:#b65312;margin:0;font-weight:900;line-height:1.2}.poster-top p{font-size:20px;color:#98521e;font-weight:700;margin:0}
+.poster-food{padding:12px 18px 4px;background:radial-gradient(ellipse at center,#f2dfc6 0%,#fff8eb 70%)}
+.food-bowl{position:relative;min-height:220px;max-width:430px;margin:auto;border-radius:48% 48% 38% 38%;background:linear-gradient(145deg,#9b5b2d,#5b301d 65%,#3e2419);border:9px solid #b9824b;box-shadow:inset 0 0 0 5px #e1b77f,0 10px 18px #4b2c1b35;display:flex;align-items:center;justify-content:center;gap:3px;flex-wrap:wrap;padding:20px 12px}
+.food{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-size:clamp(38px,9vw,58px);width:27%;height:90px;background:#f9e3bd;box-shadow:0 3px 8px #26150f50}
+.murukku{background:#e8a33f}.adhirasam{background:#9a4c20}.sesame{background:#e8d0a0}.sev{background:#f1b95a}.vadai{background:#b56b2d}
+.poster-copy{padding:8px 20px 24px;color:#281a14}.poster-copy h2{color:#8d3f18;font-size:23px;margin:14px 0 5px}.poster-copy p{font-size:17px;line-height:1.8;font-weight:700;margin:0}
+.contact{margin:18px auto 8px;padding:14px 10px;max-width:430px;background:#fff0d9;border-radius:14px;display:flex;flex-direction:column;gap:4px}.contact strong{font-size:20px}.contact b{font-size:clamp(25px,6vw,34px);color:#4b2a1b}.contact span{font-weight:700;font-size:16px}
+.order-note{font-size:27px;font-weight:900;color:#7b3518;line-height:1.45;margin-top:20px}
+@media(max-width:420px){.poster-copy{padding-left:12px;padding-right:12px}.poster-copy p{font-size:15px}.food-bowl{min-height:185px}.food{height:76px}}.intro{text-align:center;padding:20px 10px 8px}.intro h1{color:var(--wine);font-size:26px;margin:0 0 8px}.intro p{line-height:1.8;margin:0}
 .grid{max-width:1050px;margin:20px auto 90px;padding:0 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px}
 .card{background:white;border:1px solid #ead9c4;border-radius:15px;padding:20px 12px;text-align:center;box-shadow:0 4px 14px #5933230c}.emoji{font-size:38px}.card h2{font-size:19px;color:var(--wine);margin:10px 0 5px}.card p{font-size:14px;line-height:1.6;margin:0;color:#70584b}
 .note{max-width:850px;margin:0 auto 30px;padding:0 18px;text-align:center;color:#735746;line-height:1.8}
@@ -23,7 +34,22 @@ nav{position:fixed;bottom:0;left:0;right:0;background:#fffdf8;border-top:1px sol
 </head>
 <body>
 <header><div class="store">GR store's</div><div class="brand">தென்சுவை</div><div class="sub">snacks</div></header>
-<section class="hero"><img src="thensuvai-poster.webp" alt="தென்சுவை பாரம்பரிய பலகாரங்கள் விளம்பரம்"></section>
+<section class="hero">
+<div class="poster">
+  <div class="poster-top"><span>GR store's</span><h1>தென்சுவை</h1><p>உங்கள் இதயம் வரை</p></div>
+  <div class="poster-food" aria-label="முறுக்கு, அதிரசம், எள்ளுருண்டை மற்றும் சீவல் பலகாரங்கள்">
+    <div class="food-bowl"><span class="food murukku">🥨</span><span class="food adhirasam">🍘</span><span class="food sesame">⚪</span><span class="food sev">〰️</span><span class="food vadai">🧆</span></div>
+  </div>
+  <div class="poster-copy">
+    <h2>உற்பத்தி &amp; சப்ளை</h2>
+    <p>• முறுக்கு, அதிரசம், எள் உருண்டை, சீவல்<br>• வடை வகைகள்</p>
+    <h2>சேவை</h2>
+    <p>✓ வீட்டு விசேஷம் / மறு வீட்டு பலகாரம்<br>✓ தினசரி மொத்த வியாபாரர் சப்ளை<br>✓ தேநீர் கடை &amp; ஓட்டல்களுக்கு வழங்கல்</p>
+    <div class="contact"><strong>ஆர்டர் தொடர்பு:</strong><b>☎ 9790592680</b><span>அழைக்கவும் / WhatsApp</span></div>
+    <div class="order-note">ஒரு முறை வாங்குங்கள்<br>பல முறை நாடுவீர்கள்!</div>
+  </div>
+</div>
+</section>
 <section class="intro"><h1>உங்கள் இதயம் வரை ❤️</h1><p>வீட்டுச் சுவையில், தரமான பொருட்களால் தயாரிக்கப்படும்<br>பாரம்பரிய பலகாரங்கள்!</p></section>
 <main class="grid">
 <article class="card"><div class="emoji">🥨</div><h2>முறுக்கு</h2><p>மொறுமொறுப்பான பாரம்பரிய சுவை</p></article>
