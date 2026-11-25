@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1084" height="1536" viewBox="0 0 1084 1536">
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#fff7df"/><stop offset=".55" stop-color="#ffe9b8"/><stop offset="1" stop-color="#f7d99a"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#fffef0"/><stop offset="1" stop-color="#f4d99d"/></radialGradient>
+ <linearGradient id="basket" x2="0" y2="1"><stop stop-color="#d99b4d"/><stop offset=".5" stop-color="#a85d24"/><stop offset="1" stop-color="#713a1b"/></linearGradient>
+ <linearGradient id="murukku" x2="0" y2="1"><stop stop-color="#ffd36a"/><stop offset=".55" stop-color="#f39b18"/><stop offset="1" stop-color="#bd5c0c"/></linearGradient>
+ <linearGradient id="adh" x2="0" y2="1"><stop stop-color="#a64c1e"/><stop offset=".45" stop-color="#6c2b13"/><stop offset="1" stop-color="#3d180e"/></linearGradient>
+ <linearGradient id="laddu" x2="0" y2="1"><stop stop-color="#f8d28b"/><stop offset=".6" stop-color="#c98b3d"/><stop offset="1" stop-color="#875020"/></linearGradient>
+ <linearGradient id="sev" x2="0" y2="1"><stop stop-color="#ffe08a"/><stop offset="1" stop-color="#d98213"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="14"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="22"/></filter>
+ <pattern id="weave" width="34" height="22" patternUnits="userSpaceOnUse"><path d="M0 5 Q17 -5 34 5 M0 16 Q17 6 34 16" fill="none" stroke="#f0bd73" stroke-width="5"/><path d="M7 0 Q-2 11 7 22 M24 0 Q15 11 24 22" fill="none" stroke="#713b1e" stroke-width="3" opacity=".6"/></pattern>
+</defs>
+<rect width="1084" height="1536" fill="url(#bg)"/>
+<circle cx="530" cy="810" r="510" fill="url(#glow)" opacity=".8"/>
+<g opacity=".55" fill="#65a63d"><path d="M40 80 Q160 80 175 230 Q65 208 40 80Z"/><path d="M175 230 Q80 190 60 120 Q150 120 175 230Z"/><path d="M1040 70 Q920 75 900 225 Q1015 205 1040 70Z"/><path d="M900 225 Q1000 185 1020 115 Q925 112 900 225Z"/></g>
+<text x="542" y="170" text-anchor="middle" font-family="Noto Sans Tamil, sans-serif" font-size="100" font-weight="900" fill="#bd4c08">தென்சுவை</text>
+<path d="M245 202 Q540 270 850 200" fill="none" stroke="#4b9b2b" stroke-width="9"/>
+<text x="542" y="260" text-anchor="middle" font-family="Noto Sans Tamil, sans-serif" font-size="40" font-weight="700" fill="#793714">உங்கள் இதயம் வரை</text>
+<text x="542" y="365" text-anchor="middle" font-family="Noto Sans Tamil, sans-serif" font-size="43" font-weight="800" fill="#542719">உற்பத்தி &amp; சப்ளை</text>
+<text x="542" y="430" text-anchor="middle" font-family="Noto Sans Tamil, sans-serif" font-size="39" font-weight="700" fill="#542719">• முறுக்கு, அதிரசம், எள் உருண்டை, சீவல்</text>
+<text x="542" y="485" text-anchor="middle" font-family="Noto Sans Tamil, sans-serif" font-size="39" font-weight="700" fill="#542719">• வடை வகைகள்</text>
+<rect x="370" y="520" width="344" height="58" rx="29" fill="#b94e12"/>
+<text x="542" y="562" text-anchor="middle" font-family="Noto Sans Tamil, sans-serif" font-size="34" font-weight="800" fill="#fff5d9">சேவை:</text>
+<g font-family="Noto Sans Tamil, sans-serif" font-size="31" font-weight="700" fill="#542719">
+<text x="100" y="635">✓ வீட்டு விசேஷம் / மறு வீட்டு பலகாரம்</text>
+<text x="100" y="687">✓ தினசரி மொத்த வியாபாரர் சப்ளை</text>
+<text x="100" y="739">✓ தேநீர் கடை &amp; ஓட்டல்களுக்கு வழங்கல்</text>
+</g>
+<!-- tabletop -->
+<path d="M0 1000 Q250 945 520 1000 T1084 990 V1536 H0Z" fill="#a96d38" opacity=".18"/>
+<path d="M0 1110 L1084 1020 M0 1220 L1084 1130 M0 1330 L1084 1240" stroke="#9a693c" stroke-width="5" opacity=".15"/>
+<!-- basket shadow -->
+<ellipse cx="355" cy="1270" rx="360" ry="180" fill="#4d2b17" opacity=".28" filter="url(#shadow)"/>
+<!-- leaves -->
+<g fill="#438b30" stroke="#276c27" stroke-width="4"><path d="M70 1030 Q70 900 180 880 Q170 1000 70 1030Z"/><path d="M115 1080 Q130 930 255 930 Q225 1040 115 1080Z"/><path d="M510 1000 Q580 875 690 920 Q640 1030 510 1000Z"/></g>
+<!-- basket body -->
+<path d="M35 1070 Q520 920 900 1080 L825 1390 Q520 1530 140 1390Z" fill="url(#basket)" stroke="#75401f" stroke-width="18"/>
+<path d="M45 1080 Q520 950 890 1080 L825 1380 Q520 1505 145 1380Z" fill="url(#weave)" opacity=".95"/>
+<ellipse cx="470" cy="1085" rx="440" ry="150" fill="#633417" stroke="#d99b55" stroke-width="28"/>
+<ellipse cx="470" cy="1075" rx="410" ry="125" fill="#315f20" stroke="#f0c17b" stroke-width="12"/>
+<!-- banana leaf -->
+<path d="M80 1080 Q430 900 850 1060 Q520 1185 80 1080Z" fill="#4d982d" stroke="#286b25" stroke-width="6"/>
+<path d="M80 1080 Q450 1100 850 1060" stroke="#a6d66a" stroke-width="6" fill="none"/>
+<!-- murukku spirals -->
+<g fill="none" stroke="url(#murukku)" stroke-width="23" stroke-linecap="round">
+<path d="M85 1040 C20 950 150 870 215 945 C280 1025 170 1080 120 1015 C80 965 145 920 180 965 C210 1000 165 1035 145 1000"/>
+<path d="M175 1080 C105 990 235 910 300 980 C365 1055 270 1130 210 1065 C170 1020 230 970 260 1005 C290 1040 250 1070 230 1040"/>
+<path d="M80 1140 C20 1060 125 1000 195 1050 C260 1105 190 1170 135 1130 C100 1105 135 1070 160 1090"/>
+<path d="M270 1030 C210 950 330 895 390 960 C450 1030 365 1090 315 1045 C280 1010 320 980 350 1005"/>
+</g>
+<!-- adhirasam discs -->
+<g>
+<ellipse cx="570" cy="1010" rx="112" ry="74" fill="#4a2415" opacity=".3"/>
+<ellipse cx="560" cy="980" rx="112" ry="73" fill="url(#adh)" stroke="#4d1e0d" stroke-width="8"/>
+<ellipse cx="560" cy="970" rx="88" ry="53" fill="none" stroke="#c4773a" stroke-width="6" opacity=".6"/>
+<path d="M495 955 Q550 920 620 955 M490 980 Q560 1010 630 970" fill="none" stroke="#d68a4a" stroke-width="5" opacity=".5"/>
+<ellipse cx="720" cy="1050" rx="90" ry="63" fill="url(#adh)" stroke="#4d1e0d" stroke-width="8"/>
+<ellipse cx="405" cy="1075" rx="95" ry="65" fill="url(#adh)" stroke="#4d1e0d" stroke-width="8"/>
+</g>
+<!-- sesame balls -->
+<g fill="url(#laddu)" stroke="#87501f" stroke-width="5">
+<circle cx="160" cy="1200" r="57"/><circle cx="265" cy="1170" r="55"/><circle cx="365" cy="1210" r="58"/><circle cx="480" cy="1175" r="54"/><circle cx="585" cy="1200" r="57"/><circle cx="690" cy="1165" r="52"/>
+</g>
+<g fill="#f8e0a9">
+<g><circle cx="140" cy="1177" r="5"/><circle cx="173" cy="1188" r="5"/><circle cx="155" cy="1215" r="5"/><circle cx="185" cy="1230" r="5"/><circle cx="130" cy="1227" r="5"/><circle cx="160" cy="1245" r="5"/></g>
+<g><circle cx="250" cy="1148" r="5"/><circle cx="280" cy="1165" r="5"/><circle cx="260" cy="1192" r="5"/><circle cx="295" cy="1200" r="5"/><circle cx="230" cy="1185" r="5"/></g>
+<g><circle cx="350" cy="1185" r="5"/><circle cx="380" cy="1200" r="5"/><circle cx="355" cy="1230" r="5"/><circle cx="395" cy="1240" r="5"/><circle cx="330" cy="1215" r="5"/></g>
+<g><circle cx="465" cy="1150" r="5"/><circle cx="490" cy="1170" r="5"/><circle cx="470" cy="1200" r="5"/><circle cx="505" cy="1210" r="5"/><circle cx="445" cy="1185" r="5"/></g>
+<g><circle cx="570" cy="1175" r="5"/><circle cx="600" cy="1190" r="5"/><circle cx="580" cy="1220" r="5"/><circle cx="615" cy="1230" r="5"/><circle cx="555" cy="1210" r="5"/></g>
+</g>
+<!-- sev heap -->
+<path d="M620 1190 Q670 1110 760 1140 Q850 1180 790 1265 Q710 1310 625 1260Z" fill="url(#sev)" stroke="#b66a14" stroke-width="6"/>
+<g fill="none" stroke="#ffdf83" stroke-width="11" stroke-linecap="round"><path d="M640 1210 Q700 1120 790 1170 Q740 1210 650 1240"/><path d="M650 1240 Q730 1150 810 1200"/><path d="M665 1260 Q720 1180 800 1230"/><path d="M675 1190 Q740 1150 785 1180"/></g>
+<!-- woven front rim -->
+<path d="M25 1190 Q470 1360 905 1190" fill="none" stroke="#d89a50" stroke-width="35"/>
+<path d="M25 1190 Q470 1360 905 1190" fill="none" stroke="#f3c27d" stroke-width="9" stroke-dasharray="20 10"/>
+<path d="M0 1450 Q270 1415 540 1450 T1084 1450 L1084 1536 L0 1536Z" fill="#71300d"/>
+<path d="M0 1445 Q270 1410 540 1445 T1084 1445" fill="none" stroke="#f5bd3f" stroke-width="16"/>
+<text x="540" y="865" text-anchor="middle" font-family="Noto Sans Tamil, sans-serif" font-size="36" font-weight="800" fill="#6a3217">ஆர்டர் தொடர்பு: 9629030134</text>
+<text x="540" y="915" text-anchor="middle" font-family="Noto Sans Tamil, sans-serif" font-size="29" font-weight="700" fill="#6a3217">அழைக்கவும் / WhatsApp</text>
+<text x="540" y="1410" text-anchor="middle" font-family="Noto Sans Tamil, sans-serif" font-size="36" font-weight="900" fill="#fff0cb">ஒரு முறை வாங்குங்கள் • பல முறை நாடுவீர்கள்!</text>
+</svg>
