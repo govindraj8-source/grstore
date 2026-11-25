@@ -61,6 +61,36 @@
 }
 </script>
 <style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff8e8;color:#3b281e;font-family:Arial,"Noto Sans Tamil",sans-serif;line-height:1.7}
+header{background:#552b20;color:#fff;text-align:center;padding:18px 12px 20px}
+.store{font-size:16px;letter-spacing:1px}
+.brand{font-size:clamp(34px,8vw,52px);font-weight:800;color:#ffd36a;line-height:1.35}
+.sub{font-size:18px;letter-spacing:3px;text-transform:uppercase}
+.hero{max-width:760px;margin:22px auto;padding:0 14px;text-align:center}
+.hero img{display:block;width:100%;height:auto;max-width:620px;margin:auto;border-radius:16px;box-shadow:0 5px 22px #0002}
+.intro{max-width:850px;margin:24px auto;padding:0 18px;text-align:center}
+.intro h1{font-size:clamp(23px,5vw,32px);color:#713a1b}
+.intro p{font-size:18px}
+.grid{max-width:900px;margin:25px auto;padding:0 14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px}
+.card{background:#fff;border:1px solid #f0d8b3;border-radius:14px;padding:18px 12px;text-align:center;box-shadow:0 3px 12px #6a321711}
+.emoji{font-size:38px}
+.card h2{font-size:20px;margin:5px 0;color:#713a1b}
+.card p{margin:0;font-size:15px}
+.price-info,.map-section{max-width:760px;margin:28px auto;padding:24px 18px;text-align:center;background:#fff;border-radius:16px;border:1px solid #f0d8b3}
+.price-info h2,.map-section h2{color:#713a1b}
+.phone-number{font-size:25px;font-weight:700}
+.phone-number a{color:#552b20;text-decoration:none}
+.whatsapp-btn,.map-link{display:inline-block;margin:10px 0;padding:13px 20px;border-radius:28px;text-decoration:none;font-weight:700}
+.whatsapp-btn{background:#168b49;color:#fff}
+.map-link{background:#552b20;color:#fff}
+.note{text-align:center;padding:18px 16px;color:#713a1b;font-weight:600}
+footer{background:#552b20;color:#fff;text-align:center;padding:18px}
+nav{position:sticky;bottom:0;background:#fff;padding:10px;text-align:center;box-shadow:0 -2px 12px #0001}
+nav a{color:#552b20;font-weight:700;text-decoration:none}
+@media(max-width:480px){.hero{margin:14px auto}.intro p{font-size:16px}.price-info,.map-section{margin:18px 12px}}
+</style>
+</head>
 
 <body>
 <header><div class="store">GR store's</div><div class="brand">தென்சுவை</div><div class="sub">snacks</div></header>
